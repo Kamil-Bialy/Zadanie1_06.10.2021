@@ -21,27 +21,10 @@ int main() {
 	
 	Triangle trojkat;
 	
-	cout << "Podaj podstawe trojkata: " << endl;
-	cin >> trojkat.bok_a;
-	while(trojkat.bok_a <= 0)
-	{
-		cout << "Podaj poprawna wartosc: " << endl;
-		cin >> trojkat.bok_a;
-	}
-	cout << "Podaj pozostale dwa boki trojkata: " << endl;
-	cin >> trojkat.bok_b >> trojkat.bok_c;
-	while(trojkat.bok_b <= 0 && trojkat.bok_c <= 0)
-	{
-		cout << "Podaj poprawne wartosci: " << endl;
-		cin >> trojkat.bok_b >> trojkat.bok_c;
-	}
-	cout << "Podaj wysokosc trojkata: " << endl;
-	cin >> trojkat.h;
-	while(trojkat.h <= 0)
-	{
-		cout << "Podaj poprawna wartosc: " << endl;
-		cin >> trojkat.h;
-	}
+	trojkat.bok_a = 4;
+	trojkat.bok_b = 3;
+	trojkat.bok_c = 5;
+	trojkat.h = 4;
 	
 	cout << "Pole trojkata wynosi: " << trojkat.obliczPole() << endl;
 	cout << "Obwod trojkata wynosi: " << trojkat.obliczObwod() << endl;
